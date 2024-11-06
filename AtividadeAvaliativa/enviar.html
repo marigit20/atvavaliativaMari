@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="scripit.js" defer></script>
+</head>
+<body>
+
+        <h1>Informações Enviadas</h1>
+        <p><strong>Nome:</strong> <span id="nome"></span></p>
+        <p><strong>Endereço:</strong> <span id="endereco"></span></p>
+        <p><strong>CEP:</strong> <span id="cep"></span></p>
+        <p><strong>CPF:</strong> <span id="cpf"></span></p>
+        <p><strong>Telefone:</strong> <span id="telefone"></span></p>
+        <p><strong>CNPJ:</strong> <span id="cnpj"></span></p>
+        <p><strong>Código:</strong> <span id="codigo"></span></p>
+    
+        <script>
+           
+            document.getElementById("nome").textContent = localStorage.getItem("nome");
+            document.getElementById("endereco").textContent = localStorage.getItem("endereco");
+            document.getElementById("cep").textContent = localStorage.getItem("cep");
+            document.getElementById("cpf").textContent = localStorage.getItem("cpf");
+            document.getElementById("telefone").textContent = localStorage.getItem("telefone");
+            document.getElementById("cnpj").textContent = localStorage.getItem("cnpj");
+            document.getElementById("codigo").textContent = localStorage.getItem("codigo");
+        </script>
+    
+</body>
+</html>
